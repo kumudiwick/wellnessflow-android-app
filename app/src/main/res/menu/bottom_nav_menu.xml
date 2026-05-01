@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_habits"
+        android:icon="@drawable/ic_habits"
+        android:title="@string/nav_habits" />
+    <item
+        android:id="@+id/menu_mood"
+        android:icon="@drawable/ic_mood"
+        android:title="@string/nav_mood" />
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/menu_todo"
+        android:icon="@drawable/ic_todo"
+        android:title="@string/nav_todo" />
+    <item
+        android:id="@+id/menu_hydration"
+        android:icon="@drawable/ic_hydration"
+        android:title="@string/nav_hydration" />
+</menu>

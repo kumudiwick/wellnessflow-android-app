@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface_card"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_md">
+
+    <!-- Mood Prompt with decorative styling -->
+    <TextView
+        android:id="@+id/mood_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mood_picker_prompt"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        android:letterSpacing="0.01" />
+
+    <!-- Decorative underline -->
+    <View
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/primary_blue"
+        android:alpha="0.6" />
+
+    <!-- Mood Options ChipGroup with enhanced styling -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/mood_toggle_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:chipSpacingHorizontal="8dp"
+        app:chipSpacingVertical="8dp"
+        app:selectionRequired="true"
+        app:singleLine="false"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/mood_option_great"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mood_option_great"
+            android:text="@string/mood_chip_great_display"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/mood_happy"
+            app:chipCornerRadius="24dp"
+            app:chipMinHeight="48dp"
+            app:chipStrokeColor="@color/mood_happy"
+            app:chipStrokeWidth="2dp"
+            app:ensureMinTouchTargetSize="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/mood_option_good"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mood_option_good"
+            android:text="@string/mood_chip_good_display"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/mood_calm"
+            app:chipCornerRadius="24dp"
+            app:chipMinHeight="48dp"
+            app:chipStrokeColor="@color/mood_calm"
+            app:chipStrokeWidth="2dp"
+            app:ensureMinTouchTargetSize="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/mood_option_okay"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mood_option_okay"
+            android:text="@string/mood_chip_okay_display"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/accent_lemon"
+            app:chipCornerRadius="24dp"
+            app:chipMinHeight="48dp"
+            app:chipStrokeColor="@color/accent_lemon"
+            app:chipStrokeWidth="2dp"
+            app:ensureMinTouchTargetSize="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/mood_option_low"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mood_option_low"
+            android:text="@string/mood_chip_low_display"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/mood_sad"
+            app:chipCornerRadius="24dp"
+            app:chipMinHeight="48dp"
+            app:chipStrokeColor="@color/mood_sad"
+            app:chipStrokeWidth="2dp"
+            app:ensureMinTouchTargetSize="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/mood_option_bad"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mood_option_bad"
+            android:text="@string/mood_chip_bad_display"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/mood_stressed"
+            app:chipCornerRadius="24dp"
+            app:chipMinHeight="48dp"
+            app:chipStrokeColor="@color/mood_stressed"
+            app:chipStrokeWidth="2dp"
+            app:ensureMinTouchTargetSize="true" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Add Note Section Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Note"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold" />
+
+    <!-- Mood Note Input in a prominent card with border -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:strokeColor="@color/primary_blue"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mood_note_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mood_note_hint"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/text_secondary"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/text_subtle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mood_note_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/surface_variant_light"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLines="5"
+                    android:minLines="4"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:gravity="top|start"
+                    android:lineSpacingExtra="4dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Energy Level Section with prominent card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:strokeColor="@color/accent_salmon"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/surface_background">
+
+            <!-- Energy Level Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/mood_energy_label"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/accent_salmon"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"/>
+            </LinearLayout>
+
+            <!-- Energy Slider with enhanced styling -->
+
+            <!-- Energy level indicators with icons/emojis -->
+            <com.google.android.material.slider.Slider
+                android:id="@+id/mood_energy_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:stepSize="1"
+                android:value="5"
+                android:valueFrom="1"
+                android:valueTo="10"
+                app:haloColor="@color/accent_salmon"
+                app:labelBehavior="gone"
+                app:thumbColor="@color/accent_salmon"
+                app:thumbElevation="6dp"
+                app:thumbRadius="16dp"
+                app:tickVisible="false"
+                app:trackColorActive="@color/accent_salmon"
+                app:trackColorInactive="@color/divider_light"
+                app:trackHeight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😴"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+                        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                        android:textColor="@color/text_secondary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😊"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium"
+                        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                        android:textColor="@color/text_secondary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⚡"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High"
+                        android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                        android:textColor="@color/text_secondary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

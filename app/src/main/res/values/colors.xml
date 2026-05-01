@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 60% Base / Neutral Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="surface_variant_light">#F5F0FF</color>
+    <color name="surface_background">#FFF5F0</color>
+    <color name="surface_card">#FFFFFFFF</color>
+    <color name="surface_card_tint">#EEE5FF</color>
+    <color name="text_primary">#4A4458</color>
+    <color name="text_secondary">#7B7486</color>
+    <color name="text_subtle">#9D96A6</color>
+    <color name="text_hint">#C4BFD0</color>
+    <color name="divider_light">#E8DEFF</color>
+    <color name="border_subtle">#DED5EB</color>
+    <color name="shadow_light">#1AA494C8</color>
+    <color name="shadow_medium">#33A494C8</color>
+
+    <!-- 30% Secondary / Support Colors -->
+    <color name="primary_blue">#A494C8</color>
+    <color name="secondary_mint">#95C9AA</color>
+    <color name="accent_lilac">#C4B5E9</color>
+    <color name="accent_sky">#A8D0E6</color>
+    <color name="accent_peach">#FFC8A8</color>
+    <color name="accent_pink">#FFA3C9</color>
+    <color name="accent_lemon">#FFF4B4</color>
+    <color name="accent_rose">#FFC4D5</color>
+    <color name="gradient_start">#EEE5FF</color>
+    <color name="gradient_middle">#FFF5F0</color>
+    <color name="gradient_end">#E5F4FF</color>
+    <color name="day_chip_checked_background">#F5E3FF</color>
+    <color name="day_chip_unchecked_background">#33FFFFFF</color>
+    <color name="day_chip_checked_stroke">#C3A2FF</color>
+    <color name="day_chip_unchecked_stroke">#4DFFFFFF</color>
+    <color name="day_chip_checked_text">#3E2F53</color>
+    <color name="day_chip_unchecked_text">#705A88</color>
+    <color name="day_chip_checked_icon">#3E2F53</color>
+    <color name="day_chip_ripple">#66FFFFFF</color>
+
+    <!-- 10% Accent / Highlight Colors -->
+    <color name="accent_indigo">#8B8FD8</color>
+    <color name="accent_teal">#78C4C0</color>
+    <color name="accent_salmon">#FFA495</color>
+    <color name="bottom_nav_gradient_start">#F0D7BA</color>
+    <color name="bottom_nav_gradient_end">#E4C6A3</color>
+    <color name="bottom_nav_glow">#59FFFFFF</color>
+    <color name="bottom_nav_stroke">#99FFFFFF</color>
+    <color name="bottom_nav_simple_bg">#E4C6A3</color>
+    <color name="bottom_nav_icon_active">#5B3DB2</color>
+    <color name="bottom_nav_icon_inactive">#7F6C9F</color>
+    <color name="bottom_nav_indicator">#FFFFFFFF</color>
+    <color name="nav_item_ripple">#33A494C8</color>
+    <color name="button_pressed">#C4B5E9</color>
+    <color name="success_green">#95CDA0</color>
+    <color name="warning_yellow">#FFE0A0</color>
+    <color name="error_red">#FFBCBC</color>
+    <color name="info_blue">#B4D1E5</color>
+    <color name="mood_happy">#FFDD93</color>
+    <color name="mood_calm">#A8D0E6</color>
+    <color name="mood_energetic">#FFC8A8</color>
+    <color name="mood_sad">#C4B5E9</color>
+    <color name="mood_stressed">#FFA495</color>
+
+</resources>

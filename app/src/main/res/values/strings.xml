@@ -1,0 +1,175 @@
+﻿<resources>
+    <string name="app_name">WellnessFlow</string>
+    <string name="app_tagline">Mindful routines, simplified</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_habits">Habits</string>
+    <string name="nav_mood">Mood</string>
+    <string name="nav_todo">Tasks</string>
+    <string name="nav_hydration">Hydration</string>
+
+    <!-- Habits -->
+    <string name="habits_title">Today\'s Habits</string>
+    <string name="habits_empty_state">Add your first habit to get started.</string>
+    <string name="habits_progress_hint">Stay consistent to keep your streak alive.</string>
+    <string name="habits_progress_caption_with_date">%1$s - %2$s</string>
+    <string name="habit_item_actions">Habit actions</string>
+    <string name="add_habit">Add Habit</string>
+    <string name="edit_habit">Edit Habit</string>
+    <string name="delete_habit">Delete Habit</string>
+    <string name="habit_name_hint">Habit name</string>
+    <string name="habit_description_hint">Description (optional)</string>
+    <string name="habit_category_label">Category</string>
+    <string name="habit_frequency_label">Frequency</string>
+    <string name="habit_daily_option">Daily</string>
+    <string name="habit_weekly_option">Weekly</string>
+    <string name="habit_target_days_label">Target days</string>
+    <string name="habit_select_days_warning">Select at least one day.</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="delete_habit_confirm">Delete this habit?</string>
+    <string name="delete_habit_message">This will remove the habit and its history.</string>
+
+    <!-- Mood -->
+    <string name="mood_title">Mood Journal</string>
+    <string name="add_mood_entry">Log Mood</string>
+    <string name="mood_note_hint">Add a note (optional)</string>
+    <string name="mood_energy_label">Energy</string>
+    <string name="mood_empty_state">No moods logged yet.</string>
+    <string name="mood_picker_prompt">How are you feeling?</string>
+    <string name="mood_deleted_message">Mood entry deleted.</string>
+    <string name="mood_header_message">Track how you felt and spot trends over time.</string>
+
+    <string name="mood_option_great">Great</string>
+    <string name="mood_option_good">Good</string>
+    <string name="mood_option_okay">Okay</string>
+    <string name="mood_option_low">Low</string>
+    <string name="mood_option_bad">Bad</string>
+
+    <string name="mood_chip_great">&#x1F604;</string>
+    <string name="mood_chip_good">&#x1F60A;</string>
+    <string name="mood_chip_okay">&#x1F610;</string>
+    <string name="mood_chip_low">&#x1F614;</string>
+    <string name="mood_chip_bad">&#x1F622;</string>
+    <string name="mood_chip_great_display">&#x1F604; Great</string>
+    <string name="mood_chip_good_display">&#x1F60A; Good</string>
+    <string name="mood_chip_okay_display">&#x1F610; Okay</string>
+    <string name="mood_chip_low_display">&#x1F614; Low</string>
+    <string name="mood_chip_bad_display">&#x1F622; Bad</string>
+
+    <!-- Hydration -->
+    <string name="hydration_title">Hydration Tracker</string>
+    <string name="hydration_progress_label">%1$d / %2$d ml</string>
+    <string name="hydration_progress_hint">You are closest when reminders stay on schedule.</string>
+    <string name="hydration_settings">Reminder Settings</string>
+    <string name="hydration_quick_actions">Quick log</string>
+    <string name="hydration_empty_state">No hydration data yet. Log your first glass!</string>
+    <string name="hydration_enable_label">Enable reminders</string>
+    <string name="hydration_interval_label">Reminder interval</string>
+    <string name="hydration_start_time_label">Start time</string>
+    <string name="hydration_end_time_label">End time</string>
+    <string name="hydration_daily_goal_label">Daily goal (ml)</string>
+    <string name="hydration_active_days_label">Active days</string>
+    <string name="hydration_notification_sound">Play sound</string>
+    <string name="hydration_notification_vibrate">Vibrate</string>
+    <string name="hydration_saved">Hydration reminders updated.</string>
+
+    <!-- Home -->
+    <string name="home_header_message">Check your progress and keep the streak going.</string>
+    <string name="home_overview_title">Today at a glance</string>
+    <string name="home_greeting_generic">Welcome back!</string>
+    <string name="home_habit_summary">%1$d of %2$d habits completed</string>
+    <string name="home_mood_prompt">Log how you feel</string>
+    <string name="home_hydration_prompt">Add water intake</string>
+    <string name="home_quote_placeholder">&quot;Every day is a fresh start.&quot;</string>
+    <string name="home_profile_cd">Open profile</string>
+    <string name="home_header_message_personalized">%1$s, let\'s keep your streak going today.</string>
+
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Welcome to WellnessFlow</string>
+    <string name="onboarding_subtitle">Let\'s start with your name so we can personalise your journey.</string>
+    <string name="onboarding_name_hint">Your name</string>
+    <string name="onboarding_name_error">Please share your name to continue.</string>
+    <string name="onboarding_cta">Start my wellness plan</string>
+    <string name="onboarding_illustration_cd">Wellness illustration</string>
+
+    <!-- Misc -->
+    <string name="dialog_close">Close</string>
+    <string name="menu_share">Share</string>
+    <string name="permission_notifications_rationale">Allow notifications so hydration reminders can reach you.</string>
+    <string name="mood_timestamp_with_energy">%1$s - Energy %2$d/10</string>
+    <string name="hydration_history_amount">%1$d ml</string>
+    <string name="hydration_history_title">Last 7 days</string>
+    <string name="hydration_notification_title">Time to hydrate!</string>
+    <string name="hydration_notification_body">You\'ve had %1$d of %2$d ml today.</string>
+    <string name="hydration_notification_channel_name">Hydration reminders</string>
+    <string name="hydration_notification_channel_description">Notifications to help you stay hydrated.</string>
+    <string name="action_done">Done</string>
+    <string name="action_snooze">Snooze 15 min</string>
+    <string name="hydration_custom_amount_hint">Amount (ml)</string>
+    <string name="hydration_custom_label">Custom</string>
+    <string name="hydration_select_days_warning">Select at least one active day.</string>
+    <string name="home_greeting_morning">Good morning!</string>
+    <string name="home_greeting_afternoon">Good afternoon!</string>
+    <string name="home_greeting_evening">Good evening!</string>
+    <string name="home_mood_energy">Energy %1$d/10</string>
+    <string name="hydration_quick_add_confirmation">Added 250 ml to today\'s total.</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Your Profile</string>
+    <string name="profile_toolbar_navigation">Navigate back</string>
+    <string name="profile_welcome">Hello, %1$s</string>
+    <string name="profile_member_since">Member since %1$s</string>
+    <string name="profile_mood_trend_title">Mood trend (last 7 days)</string>
+    <string name="profile_mood_trend_empty">Log a few moods to start seeing your trend.</string>
+    <string name="profile_weekly_summary_title">Weekly highlights</string>
+    <string name="profile_metric_habits">%1$d of %2$d habits done</string>
+    <string name="profile_metric_hydration">%1$d of %2$d ml logged</string>
+    <string name="profile_metric_moods">%1$d moods captured</string>
+    <string name="profile_bio_title">About you</string>
+    <string name="profile_bio_placeholder">Add a short bio so the app feels personal.</string>
+    <string name="profile_bio_edit">Edit bio</string>
+    <string name="profile_bio_saved">Bio updated</string>
+    <string name="profile_notes_title">Personal notes</string>
+    <string name="profile_notes_empty">Capture ideas, reminders, or wins along your journey.</string>
+    <string name="profile_notes_add">Add note</string>
+    <string name="profile_notes_edit">Edit note</string>
+    <string name="profile_notes_delete">Delete note</string>
+    <string name="profile_note_saved">Note saved</string>
+    <string name="profile_note_deleted">Note deleted</string>
+    <string name="profile_dialog_bio_hint">Write a short introduction</string>
+    <string name="profile_dialog_note_hint">What would you like to remember?</string>
+    <string name="profile_dialog_note_error">Write something before saving.</string>
+    <string name="profile_note_timestamp">Saved • %1$s at %2$s</string>
+    <string name="profile_dialog_title_bio">Update bio</string>
+    <string name="profile_dialog_title_note_add">New note</string>
+    <string name="profile_dialog_title_note_edit">Edit note</string>
+    <string name="profile_mood_axis_low">Calm</string>
+    <string name="profile_mood_axis_mid">Balanced</string>
+    <string name="profile_mood_axis_high">Energised</string>
+    <string name="profile_avatar_cd">Profile avatar</string>
+
+    <!-- Tasks -->
+    <string name="todo_title">Task List</string>
+    <string name="todo_empty_state">No tasks yet. Add one to get started.</string>
+    <string name="todo_add">Add Task</string>
+    <string name="todo_edit">Edit Task</string>
+    <string name="todo_add_dialog_title">Add task</string>
+    <string name="todo_edit_dialog_title">Edit task</string>
+    <string name="todo_name_hint">Task name</string>
+    <string name="todo_notes_hint">Notes (optional)</string>
+    <string name="todo_delete_confirm">Delete this task?</string>
+    <string name="todo_delete_message">This cannot be undone.</string>
+    <string name="todo_item_actions">Task options</string>
+    <string name="home_day_section_title">Weekly focus</string>
+    <string name="home_day_section_hint">Choose a day to preview your plan</string>
+    <string name="home_day_selection_today">Today • %1$s</string>
+    <string name="home_day_selection_generic">%1$s</string>
+    <string name="home_day_chip_text">%1$s %2$d</string>
+</resources>
+

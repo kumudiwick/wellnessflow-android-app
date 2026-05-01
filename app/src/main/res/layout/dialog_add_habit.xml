@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface_card"
+    android:padding="@dimen/spacing_md">
+
+    <!-- Habit Name Input with elevated card style -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/surface_variant_light"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/habit_name_hint"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/text_secondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Description Input with elevated card style -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/surface_variant_light"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_name"
+        app:strokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/habit_description_hint"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/text_secondary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Category Dropdown with elevated card style -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/surface_variant_light"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_description"
+        app:strokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_category"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/habit_category_label"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/text_secondary">
+
+            <AutoCompleteTextView
+                android:id="@+id/input_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:overScrollMode="never"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Color Section with decorative header -->
+    <TextView
+        android:id="@+id/color_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Color"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_category" />
+
+    <View
+        android:id="@+id/color_accent_line"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/color_label"
+        app:layout_constraintTop_toTopOf="@id/color_label" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/color_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:chipSpacingHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_label"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/color_chip_blue"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Blue"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/accent_sky"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="44dp"
+            app:chipStrokeWidth="0dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/color_chip_green"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/secondary_mint"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="44dp"
+            app:chipStrokeWidth="0dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/color_chip_orange"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orange"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/accent_peach"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="44dp"
+            app:chipStrokeWidth="0dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/color_chip_purple"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purple"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/accent_lilac"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="44dp"
+            app:chipStrokeWidth="0dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/color_chip_teal"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teal"
+            android:textColor="@color/text_primary"
+            app:chipBackgroundColor="@color/accent_teal"
+            app:chipCornerRadius="20dp"
+            app:chipMinHeight="44dp"
+            app:chipStrokeWidth="0dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Icon Section with decorative header -->
+    <TextView
+        android:id="@+id/icon_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Icon"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_group" />
+
+    <View
+        android:id="@+id/icon_accent_line"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_label"
+        app:layout_constraintTop_toTopOf="@id/icon_label" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/icon_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:chipSpacingHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_label"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/icon_chip_run"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Run"
+            android:textColor="@color/text_primary"
+            app:checkedIconTint="@color/text_primary"
+            app:chipBackgroundColor="@color/surface_card_tint"
+            app:chipCornerRadius="20dp"
+            app:chipIcon="@drawable/ic_run"
+            app:chipIconTint="@color/text_primary"
+            app:chipMinHeight="44dp"
+            app:chipStrokeColor="@color/primary_blue"
+            app:chipStrokeWidth="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/icon_chip_food"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meal"
+            android:textColor="@color/text_primary"
+            app:checkedIconTint="@color/text_primary"
+            app:chipBackgroundColor="@color/surface_card_tint"
+            app:chipCornerRadius="20dp"
+            app:chipIcon="@drawable/ic_food"
+            app:chipIconTint="@color/text_primary"
+            app:chipMinHeight="44dp"
+            app:chipStrokeColor="@color/primary_blue"
+            app:chipStrokeWidth="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/icon_chip_mind"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calm"
+            android:textColor="@color/text_primary"
+            app:checkedIconTint="@color/text_primary"
+            app:chipBackgroundColor="@color/surface_card_tint"
+            app:chipCornerRadius="20dp"
+            app:chipIcon="@drawable/ic_meditate"
+            app:chipIconTint="@color/text_primary"
+            app:chipMinHeight="44dp"
+            app:chipStrokeColor="@color/primary_blue"
+            app:chipStrokeWidth="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/icon_chip_sleep"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:textColor="@color/text_primary"
+            app:checkedIconTint="@color/text_primary"
+            app:chipBackgroundColor="@color/surface_card_tint"
+            app:chipCornerRadius="20dp"
+            app:chipIcon="@drawable/ic_sleep"
+            app:chipIconTint="@color/text_primary"
+            app:chipMinHeight="44dp"
+            app:chipStrokeColor="@color/primary_blue"
+            app:chipStrokeWidth="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/icon_chip_water"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water"
+            android:textColor="@color/text_primary"
+            app:checkedIconTint="@color/text_primary"
+            app:chipBackgroundColor="@color/surface_card_tint"
+            app:chipCornerRadius="20dp"
+            app:chipIcon="@drawable/ic_hydration"
+            app:chipIconTint="@color/text_primary"
+            app:chipMinHeight="44dp"
+            app:chipStrokeColor="@color/primary_blue"
+            app:chipStrokeWidth="2dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Frequency Switch in a subtle card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/frequency_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/surface_card_tint"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_group"
+        app:strokeWidth="0dp">
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/frequency_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/habit_weekly_option"
+            android:textColor="@color/text_primary"
+            app:thumbTint="@color/white"
+            app:trackTint="@color/primary_blue" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Target Days Label -->
+    <TextView
+        android:id="@+id/target_days_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/habit_target_days_label"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="@color/text_secondary"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frequency_card" />
+
+    <!-- Weekly Days ChipGroup -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/weekly_days_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:chipSpacingHorizontal="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/target_days_label"
+        app:selectionRequired="false"
+        app:singleSelection="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

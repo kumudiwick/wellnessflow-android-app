@@ -1,0 +1,17 @@
+package com.kumud.wellnessflow.workers
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import com.kumud.wellnessflow.data.repository.PreferencesManager
+
+class BootCompletedReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        if (intent.action == Intent.ACTION_BOOT_COMPLETED || intent.action == Intent.ACTION_MY_PACKAGE_REPLACED) {
+            val settings = PreferencesManager(context).getHydrationSettings()
+            if (settings.enabled) {
+                HydrationReminderScheduler.schedulePeriodic(context, settings)
+            }
+        }
+    }
+}

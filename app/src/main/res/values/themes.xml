@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WellnessFlow" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_indigo</item>
+        <item name="colorSecondary">@color/secondary_mint</item>
+        <item name="colorTertiary">@color/accent_salmon</item>
+        <item name="android:windowBackground">@drawable/bg_surface_gradient</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Theme.WellnessFlow" parent="Base.Theme.WellnessFlow" />
+
+    <style name="Widget.WellnessFlow.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/surface_card</item>
+        <item name="cardElevation">4dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Large</item>
+        <item name="strokeColor">@color/surface_card_tint</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+</resources>
